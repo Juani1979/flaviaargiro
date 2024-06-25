@@ -18,35 +18,194 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img class="logoPrincipal" src="./assets/img/logo_flavia_argiro.png" alt="Logo Flavia Argiró" title="by Flavia Argiró"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="navbar-toggler-icon fa-solid fa-ellipsis-vertical"></i>
+                        <i class="navbar-toggler-icon fa-solid fa-solid fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
                             <li class="nav-item text-center">
-                                <a class="nav-link active colorClaroActive" aria-current="page" href="#">Inicio</a>
+                                <a id="navInicio" class="nav-link active colorClaroActive" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                                <a id="navServicios" class="nav-link" href="#seccionServicios">Servicios</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="https://mobile.wonoma.com/#/centro/1823" target="_blank">Turnos</a>
+                                <a id="navTurnos" class="nav-link" href="https://mobile.wonoma.com/#/centro/1823" target="_blank">Turnos</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                <a id="navContacto" class="nav-link" href="./pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+
         <main>
             <section class="seccionTitulo d-flex d-md-flex flex-column">
                 <h1 class="tituloPrincipal">Desbloqueá</h1>
                 <p class="tituloSecundario">tu nuevo look</p>
                 <img class="logoWebPrincipal" src="./assets/img/logo_flavia_argiro_gde.png" alt="Logo Flavia Argiró" title="by Flavia Argiró">
-                <a href="./pages/servicios.html">
-                    <img class="flechaAbajo animate__animated animate__bounce" src="./assets/img/flecha_abajo.png" alt="Flavia Argiró Servicios" title="Flavia Argiró Servicios">
+                <a href="#seccionServicios">
+                    <img id="flechaAbajo" class="flechaAbajo animate__animated animate__bounce" src="./assets/img/flecha_abajo.png" alt="Flavia Argiró Servicios" title="Flavia Argiró Servicios">
                 </a>
+            </section>
+        
+            <section id="seccionServicios" class="seccion seccionServicios container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 left-side">
+                        <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                    </div>
+                    <div class="col-12 col-md-8 right-side">
+                        <p class="titPrincipal">COLOR</p>
+                        <p class="titSecundario">Cambio de Color</p>
+                        <p class="titSecundario">Color Fantasía</p>
+                        <p class="titSecundario">Color Global / Correción de Color</p>
+                        <p class="titSecundario">Color Inoa</p>
+                        <p class="titSecundario">Color Majirel (Coloración Clásica)</p>
+                        <p class="titSecundario">Color Richesse (sin amoníaco)</p>
+                        <p class="titSecundario">Fantasía con Deco</p>
+
+                        <div class="arrow-container">
+                            <a href="#seccionServicios">
+                                <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
+                            </a>
+                            <a href="#seccionCorte">
+                                <img src="./assets/img/flecha_der.png" alt="Flecha Derecha" class="arrow right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seccionCorte" class="seccion seccionServicios container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 left-side">
+                        <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                    </div>
+                    <div class="col-12 col-md-8 right-side">
+                        <p class="titPrincipal">CORTE</p>
+                        <p class="titSecundario">Corte de Flequillo</p>
+                        <p class="titSecundario">Cortes</p>
+                        <p class="separacion"></p>
+                        
+                        <div class="arrow-container">
+                            <a href="#seccionServicios">
+                                <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
+                            </a>
+                            <a href="#seccionForma">
+                                <img src="./assets/img/flecha_der.png" alt="Flecha Derecha" class="arrow right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seccionForma" class="seccion seccionServicios container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 left-side">
+                        <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                    </div>
+                    <div class="col-12 col-md-8 right-side">
+                        <p class="titPrincipal">FORMA</p>
+                        <p class="titSecundario">Alisado de Flequillo</p>
+                        <p class="titSecundario">Alisado Orgánico (sin formol)</p>
+                        <p class="titSecundario">Alisados</p>
+                        <p class="titSecundario">Bases de Ondulación</p>
+                        <p class="titSecundario">Cauterizado</p>
+                        <p class="titSecundario">Cauterizado Orgánico (sin formol)</p>
+                        <p class="titSecundario">Hidroplex</p>
+                        
+                        <div class="arrow-container">
+                            <a href="#seccionCorte">
+                                <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
+                            </a>
+                            <a href="#seccionPeinados">
+                                <img src="./assets/img/flecha_der.png" alt="Flecha Derecha" class="arrow right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seccionPeinados" class="seccion seccionServicios container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 left-side">
+                        <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                    </div>
+                    <div class="col-12 col-md-8 right-side">
+                        <p class="titPrincipal">PEINADOS</p>
+                        <p class="titSecundario">Peinados para Fiestas</p>
+                        <p class="titSecundario">Peinados Urbanos</p>
+                        <p class="separacion"></p>
+                        
+                        <div class="arrow-container">
+                            <a href="#seccionForma">
+                                <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
+                            </a>
+                            <a href="#seccionPeluqueria">
+                                <img src="./assets/img/flecha_der.png" alt="Flecha Derecha" class="arrow right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seccionPeluqueria" class="seccion seccionServicios container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 left-side">
+                        <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                    </div>
+                    <div class="col-12 col-md-8 right-side">
+                        <p class="titPrincipal">PELUQUERIA</p>
+                        <p class="titSecundario">Balayage</p>
+                        <p class="titSecundario">Contouring</p>
+                        <p class="titSecundario">Contrasts</p>
+                        <p class="titSecundario">Decoloración Global</p>
+                        <p class="titSecundario">Reflejos</p>
+                        <p class="titSecundario">Reflejos Cúspide</p>
+                        
+                        <div class="arrow-container">
+                            <a href="#seccionPeinados">
+                                <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
+                            </a>
+                            <a href="#seccionTratamientos">
+                                <img src="./assets/img/flecha_der.png" alt="Flecha Derecha" class="arrow right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seccionTratamientos" class="seccion eccionServicios container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 left-side">
+                        <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                    </div>
+                    <div class="col-12 col-md-8 right-side">
+                        <p class="titPrincipal">TRATAMIENTO & RITUALES</p>
+                        <p class="titSecundario">Ampollas Nutritivas</p>
+                        <p class="titSecundario">Ampollas Hidratantes</p>
+                        <p class="titSecundario">Ampollas Brillo</p>
+                        <p class="titSecundario">Ampollas Repair</p>
+                        <p class="titSecundario">Exfoliación Capilar</p>
+                        <p class="titSecundario">Hidratación Hair Logic Base</p>
+                        <p class="titSecundario">Hidratación Hair Logic Pro</p>
+                        <p class="titSecundario">Morphosis Ultimate Care (Revitaliza e Hidrata)</p>
+                        <p class="titSecundario">Reconstructor (Nutre, Hidrata y Repara la Fibra</p>
+                        <p class="titSecundario">Rituales L´Oreal PRO LONGER</p>
+                        <p class="titSecundario">Rituales Moroccanoil</p>
+                        <p class="titSecundario">Tratamiento Rubias Blondifier</p>
+                        
+                        <div class="arrow-container">
+                            <a href="#seccionPeluqueria">
+                                <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
+                            </a>
+                            <a href="#seccionServicios">
+                                <img src="./assets/img/flecha_der.png" alt="Flecha Derecha" class="arrow right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -87,7 +246,7 @@
         </div>
 
         <a href="https://wa.me/3416111286" target="_blank" title="Envíanos un mensaje por WhatsApp">
-            <i class="fa fa-whatsapp whatsapp-icon"></i>
+            <i class="fa fa-whatsapp"></i>
         </a>
 
         <script src="./js/bootstrap.bundle.js"></script>
@@ -99,6 +258,72 @@
             const currentYear = new Date().getFullYear();
             const footerText = document.getElementById('footer-text');
             footerText.innerHTML = footerText.innerHTML.replace('anioActual', currentYear);
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('.nav-link');
+                const navServicios = document.getElementById('navServicios');
+                const flechaAbajo = document.getElementById('flechaAbajo');
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        // Remover la clase active de todos los enlaces
+                        navLinks.forEach(nav => nav.classList.remove('active', 'colorClaroActive'));
+
+                        // Agregar la clase active al enlace clicado
+                        this.classList.add('active', 'colorClaroActive');
+                    });
+                });
+
+                flechaAbajo.addEventListener('click', function() {
+                    // Remover la clase active de todos los enlaces
+                    navLinks.forEach(nav => nav.classList.remove('active', 'colorClaroActive'));
+
+                    // Agregar la clase active al enlace de servicios
+                    navServicios.classList.add('active', 'colorClaroActive');
+                });
+            });
+        </script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.seccion');
+
+    // Añadir la clase visible a la sección que está en la vista
+    const showSection = (section) => {
+        section.classList.add('visible');
+    };
+
+    // Quitar la clase visible de todas las secciones
+    const hideSections = () => {
+        sections.forEach(section => {
+            section.classList.remove('visible');
+        });
+    };
+
+    // Manejar los clics en los enlaces de las flechas
+    document.querySelectorAll('.arrow-container a, .seccionTitulo a').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = anchor.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                hideSections();
+                showSection(targetSection);
+
+                // Desplazarse a la sección objetivo (opcional)
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Mostrar la primera sección al cargar la página
+    showSection(sections[0]);
+});
+    
         </script>
     </body>
 </html>
