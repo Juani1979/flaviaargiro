@@ -136,16 +136,44 @@ body {
     position: absolute;
     bottom: 18%;
     left: 5.5%;
-}   
+}
+.logoWebPrincipal {
+    width: 440px;
+    position: absolute;
+    bottom: 10%;
+    left: 7.5%;
+}
+.flechaAbajo {
+    width: 64px;
+    position: absolute;
+    bottom: 11.5%;
+    right: 14%;
+}
+
 @media screen and (max-width: 768px) {
   .seccionTitulo {
         background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
   }
   .tituloPrincipal {
-        font-size: 3.3rem;
+        font-size: 3.4rem;
+        bottom: 26%;
+        left: 14%;
   }
   .tituloSecundario {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        bottom: 22.3%;
+        left: 17.5%;
+  }
+  .logoWebPrincipal {
+        width: 260px;
+        bottom: 17%;
+        left: 8%;
+  }
+  .flechaAbajo {
+        width: 32px;
+        position: absolute;
+        bottom: 17%;
+        right: 20%;
   }
   .linkDescubrir {
         width: 120px;
@@ -222,7 +250,7 @@ body {
     color: #000;
     margin-top: 80px;
     margin-left: 30px;
-    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    margin-bottom: 20px; 
     position: relative;
 }
 .titPrincipal::after {
@@ -246,21 +274,6 @@ body {
 }
 .separacion {
     padding-top: 20px;
-}
-
-
-.logoWebPrincipal {
-    width: 440px;
-    position: absolute;
-    bottom: 10%;
-    left: 7.5%;
-}
-
-.flechaAbajo {
-    width: 64px;
-    position: absolute;
-    bottom: 11.5%;
-    right: 14%;
 }
 
 .footerPrincipal {
