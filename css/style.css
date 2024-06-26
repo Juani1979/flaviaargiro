@@ -151,35 +151,46 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .seccionTitulo {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .seccionTitulo {
+        height: 100vh;   
         background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
-  }
-  .tituloPrincipal {
+        background-size: auto;
+        background-position: center center;
+        padding-left: 0%;
+        padding-top: 0%;
+        color: #fff;
+    }
+    .tituloPrincipal {
         font-size: 3.4rem;
         bottom: 26%;
         left: 14%;
-  }
-  .tituloSecundario {
+    }
+    .tituloSecundario {
         font-size: 1.8rem;
         bottom: 22.3%;
         left: 17.5%;
-  }
-  .logoWebPrincipal {
+    }
+    .logoWebPrincipal {
         width: 260px;
         bottom: 17%;
         left: 8%;
-  }
-  .flechaAbajo {
+     }
+    .flechaAbajo {
         width: 32px;
         position: absolute;
         bottom: 17%;
-        right: 20%;
-  }
-  .linkDescubrir {
+        right: 16%;
+    }
+    .linkDescubrir {
         width: 120px;
         font-size: 1.2rem;
         padding: 18px 15px 15px 15px;
-  }
+    }
 }
 
 /*Seccion Servicios*/
