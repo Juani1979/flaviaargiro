@@ -232,6 +232,9 @@ body {
     align-items: flex-start;
     padding: 0px;
 }
+@media screen and (max-width: 768px) {
+
+}
 
 /* Contenedor de las flechas */
 .arrow-container {
