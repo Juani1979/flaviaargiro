@@ -32,7 +32,7 @@
                                 <a id="navTurnos" class="nav-link" href="https://mobile.wonoma.com/#/centro/1823" target="_blank">Turnos</a>
                             </li>
                             <li class="nav-item text-center">
-                                <a id="navContacto" class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                <a id="navContacto" class="nav-link" href="https://wa.me/3416111286" target="_blank">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -54,6 +54,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4 left-side">
                         <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                        <p class="texto-sobre-imagen">SERVICIOS</p>
                     </div>
                     <div class="col-12 col-md-8 right-side">
                         <p class="titPrincipal">COLOR</p>
@@ -66,7 +67,7 @@
                         <p class="titSecundario">Fantasía con Deco</p>
 
                         <div class="arrow-container">
-                            <a href="#seccionServicios">
+                            <a href="#">
                                 <img src="./assets/img/flecha_vacia.png" alt="Flecha Izquierda" class="arrow left-arrow">
                             </a>
                             <a href="#seccionCorte">
@@ -81,6 +82,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4 left-side">
                         <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                        <p class="texto-sobre-imagen">SERVICIOS</p>
                     </div>
                     <div class="col-12 col-md-8 right-side">
                         <p class="titPrincipal">CORTE</p>
@@ -104,6 +106,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4 left-side">
                         <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                        <p class="texto-sobre-imagen">SERVICIOS</p>
                     </div>
                     <div class="col-12 col-md-8 right-side">
                         <p class="titPrincipal">FORMA</p>
@@ -131,6 +134,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4 left-side">
                         <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                        <p class="texto-sobre-imagen">SERVICIOS</p>
                     </div>
                     <div class="col-12 col-md-8 right-side">
                         <p class="titPrincipal">PEINADOS</p>
@@ -154,6 +158,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4 left-side">
                         <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                        <p class="texto-sobre-imagen">SERVICIOS</p>
                     </div>
                     <div class="col-12 col-md-8 right-side">
                         <p class="titPrincipal">PELUQUERIA</p>
@@ -176,10 +181,11 @@
                 </div>
             </section>
 
-            <section id="seccionTratamientos" class="seccion eccionServicios container-fluid">
+            <section id="seccionTratamientos" class="seccion seccionServicios container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-4 left-side">
                         <img src="./assets/img/flaviaargiro_fondo_side.jpg" alt="Flavia Argiró Servicios">
+                        <p class="texto-sobre-imagen">SERVICIOS</p>
                     </div>
                     <div class="col-12 col-md-8 right-side">
                         <p class="titPrincipal">TRATAMIENTO & RITUALES</p>
@@ -200,7 +206,7 @@
                             <a href="#seccionPeluqueria">
                                 <img src="./assets/img/flecha_izq.png" alt="Flecha Izquierda" class="arrow left-arrow">
                             </a>
-                            <a href="#seccionServicios">
+                            <a href="#">
                                 <img src="./assets/img/flecha_vacia.png" alt="Flecha Derecha" class="arrow right-arrow">
                             </a>
                         </div>
@@ -253,77 +259,7 @@
         <script src="./js/jquery-3.5.1.slim.min.js"></script>
         <script src="./js/popper.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-
-        <script>
-            const currentYear = new Date().getFullYear();
-            const footerText = document.getElementById('footer-text');
-            footerText.innerHTML = footerText.innerHTML.replace('anioActual', currentYear);
-        </script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const navLinks = document.querySelectorAll('.nav-link');
-                const navServicios = document.getElementById('navServicios');
-                const flechaAbajo = document.getElementById('flechaAbajo');
-
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        // Remover la clase active de todos los enlaces
-                        navLinks.forEach(nav => nav.classList.remove('active', 'colorClaroActive'));
-
-                        // Agregar la clase active al enlace clicado
-                        this.classList.add('active', 'colorClaroActive');
-                    });
-                });
-
-                flechaAbajo.addEventListener('click', function() {
-                    // Remover la clase active de todos los enlaces
-                    navLinks.forEach(nav => nav.classList.remove('active', 'colorClaroActive'));
-
-                    // Agregar la clase active al enlace de servicios
-                    navServicios.classList.add('active', 'colorClaroActive');
-                });
-            });
-        </script>
-
-
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.seccion');
-
-    // Añadir la clase visible a la sección que está en la vista
-    const showSection = (section) => {
-        section.classList.add('visible');
-    };
-
-    // Quitar la clase visible de todas las secciones
-    const hideSections = () => {
-        sections.forEach(section => {
-            section.classList.remove('visible');
-        });
-    };
-
-    // Manejar los clics en los enlaces de las flechas
-    document.querySelectorAll('.arrow-container a, .seccionTitulo a').forEach(anchor => {
-        anchor.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = anchor.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            if (targetSection) {
-                hideSections();
-                showSection(targetSection);
-
-                // Desplazarse a la sección objetivo (opcional)
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
-
-    // Mostrar la primera sección al cargar la página
-    showSection(sections[0]);
-});
-    
-        </script>
+        <script src="./js/flavia_argiro.js"></script>
+        
     </body>
 </html>

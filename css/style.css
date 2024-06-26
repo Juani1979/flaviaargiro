@@ -139,7 +139,7 @@ body {
 }   
 @media screen and (max-width: 768px) {
   .seccionTitulo {
-        background-image: url("../assets/img/fondo_principal_peq.jpg");
+        background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
   }
   .tituloPrincipal {
         font-size: 3.3rem;
@@ -160,30 +160,44 @@ body {
     margin: 0;
 }
 .seccion {
+    display: none;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 .seccion.visible {
+    display: block;
     opacity: 1;
 }
 .left-side {
     padding: 0;
     margin: 0;
+    position: relative;
 }
 .left-side img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
+.texto-sobre-imagen {
+    position: absolute;
+    bottom: 4%;
+    left: 9%;
+    color: white; /* Cambia este color si es necesario */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo gris con transparencia */
+    font-size: 3rem; /* Ajusta el tamaño de fuente según sea necesario */
+    font-weight: bold;
+    padding: 25px 24px 15px 24px;
+    border-radius: 5px;
+}
 .right-side {
     position: relative;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinea los elementos al principio */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    padding: 20px; /* Añade algo de padding para darle espacio al contenido */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 /* Contenedor de las flechas */
