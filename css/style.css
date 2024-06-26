@@ -230,7 +230,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 20px;
+    padding: 0px;
 }
 
 /* Contenedor de las flechas */
