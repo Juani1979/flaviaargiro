@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-main {
-  min-height: 100vh;
-  overflow: hidden;
-}
-
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
   line-height: 1;
@@ -19,286 +14,13 @@ body {
   overflow-x: hidden;
 }
 
-/* Título de Secciones */
-.tituloSeccion {
-  color: #e31112;
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 50px;
-}
-
-.lineaTitulos {
-  width: 120px;
-  border: 2px solid #553d2a;
-  border-radius: 12px;
-  margin: 10px auto 50px auto;
-  text-align: center;
-}
-
-/* Icono WhatsApp */
-.fa-whatsapp {
-  color: #25d366;
-  font-size: 3rem;
-  position: fixed;
-  bottom: 25px;
-  right: 30px;
-  transition: transform 0.3s ease;
-}
-.fa-whatsapp:hover {
-  transform: scale(1.2);
-}
-
-/* Sección Copyright */
-.divCopyright {
-  background-color: #e31112;
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 3px;
-}
-
-.header {
-  background-color: #fff;
-  z-index: 1000;
-}
-.header .logoPrincipal {
-  width: 230px;
-}
-
-.navbar-toggler:hover {
-  border-color: #e31112;
-}
-.navbar-toggler:focus {
-  color: transparent;
-}
-.navbar-toggler-icon {
-  color: #e31112;
-  font-size: 1.5rem;
-  padding-top: 5px;
-}
-.navbar-nav {
-  column-gap: 10px;
-}
-.navbar-nav .nav-item {
-  margin: 5px;
-}
-.navbar-nav .nav-item .dropdown-item {
-  color: #e31112;
-}
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover,
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:focus {
-  color: #f8e4e4;
-  background-color: #e31112;
-}
-.navbar-nav .nav-item .dropdown-menu .dropdown-item.active,
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
-  color: #e31112;
-  background-color: #553d2a;
-}
-.navbar-nav .nav-link {
-  color: #e31112;
-  text-decoration: none;
-  font-size: 1.3rem;
-  border: 1px solid #e3111100;
-  padding: 12px 0px 8px 0px;
-}
-.navbar-nav .nav-link.colorClaroActive {
-  background-color: #e31112;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.3rem;
-  border: 1px solid #e31112;
-  border-radius: 3px;
-  padding: 12px 10px 8px 10px;
-}
-.navbar-nav .nav-link:hover,
-.header .navbar-nav .nav-link:focus {
-  color: #500606;
-  border: 1px solid #500606;
-  border-radius: 3px;
-}
-
-.seccionTitulo {
-  height: 100vh;
-  background: url("../assets/img/flaviaargiro_fondo.jpg") no-repeat center
-    center fixed;
-  background-size: cover;
-  background-position: center;
-  padding-left: 6%;
-  padding-top: 6%;
-  color: #fff;
-}
-.tituloPrincipal {
-  font-size: 7rem;
-  font-weight: 700;
-  text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
-  position: absolute;
-  bottom: 24%;
-  left: 4%;
-}
-.tituloSecundario {
-  font-size: 4rem;
-  font-weight: 400;
-  margin-top: -20px;
-  text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
-  position: absolute;
-  bottom: 18%;
-  left: 5.5%;
-}
-.logoWebPrincipal {
-  width: 440px;
-  position: absolute;
-  bottom: 10%;
-  left: 7.5%;
-}
-.flechaAbajo {
-  width: 64px;
-  position: absolute;
-  bottom: 11.5%;
-  right: 14%;
-}
-
-@media screen and (max-width: 768px) {
-  .seccionTitulo {
-    background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
-    background-size: cover;
-    background-position: center center;
-    padding-left: 0%;
-    padding-top: 0%;
-    color: #fff;
-  }
-  .tituloPrincipal {
-    font-size: 3.4rem;
-    bottom: 26%;
-    left: 14%;
-  }
-  .tituloSecundario {
-    font-size: 1.8rem;
-    bottom: 22.3%;
-    left: 17.5%;
-  }
-  .logoWebPrincipal {
-    width: 260px;
-    bottom: 17%;
-    left: 8%;
-  }
-  .flechaAbajo {
-    width: 32px;
-    position: absolute;
-    bottom: 10%;
-    left: 28%;
-  }
-  .linkDescubrir {
-    width: 120px;
-    font-size: 1.2rem;
-    padding: 18px 15px 15px 15px;
-  }
-}
-
-/*Seccion Servicios*/
-.seccionServicios {
-  padding: 0;
-  margin: 0;
-}
-.seccion {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-.seccion.visible {
-  display: block;
-  opacity: 1;
-}
-.left-side {
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-.left-side img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-.texto-sobre-imagen {
-  position: absolute;
-  bottom: 4%;
-  left: 9%;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 25px 24px 15px 24px;
-  border-radius: 5px;
-}
-.right-side {
-  position: relative;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-}
-
-.right-side iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-@media (max-width: 768px) {
-  .right-side {
-    height: auto;
-  }
-
-  .right-side iframe {
-    position: relative;
-    height: 50vh;
-  }
-}
-
-/* Contenedor de las flechas */
-.arrow-container {
-  position: absolute;
-  bottom: 16%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 18%;
-}
-
-/* Estilo de las flechas */
-.arrow {
-  width: 64px;
-  height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .imgServicios {
-    display: none;
-  }
-  .seccionServicios {
-    margin-bottom: 80px;
-  }
-  .arrow-container {
-    bottom: -20%;
-    margin-bottom: 40px;
-  }
-  .arrow {
-    width: 30px;
-  }
-}
-
-.seccionMapa {
-  padding: 0;
-  margin: 0;
+main {
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .titPrincipal {
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: #000;
   margin-top: 80px;
   margin-left: 30px;
@@ -325,156 +47,300 @@ body {
 .titSecundario:hover {
   color: #e31112;
 }
-.separacion {
-  padding-top: 20px;
+
+/* Título de Secciones */
+.tituloSeccion {
+  color: #e31112;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 50px;
 }
 
-.footerPrincipal {
-  background-color: #f8e4e4;
+.lineaTitulos {
+  width: 120px;
+  border: 2px solid #553d2a;
+  border-radius: 12px;
+  margin: 10px auto 50px;
 }
-.logoFotter {
-  width: 170px;
+
+/* Icono WhatsApp */
+.fa-whatsapp {
+  color: #25d366;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  transition: transform 0.3s ease;
 }
-.footerCol {
-  margin-top: 30px;
-  margin-bottom: 20px;
+.fa-whatsapp:hover {
+  transform: scale(1.2);
 }
-.listaNavFooter {
-  list-style: none;
-  text-align: left;
+
+/* Sección Copyright */
+.divCopyright {
+  background-color: #e31112;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  color: #fff;
+  padding: 20px 0 3px;
 }
-.listaNavFooter .listaItemFooter {
-  margin: 0 0 10px 0;
-  text-align: center;
+
+.header {
+  background-color: #fff;
+  z-index: 1000;
 }
-.listaNavFooter .listaItemFooter .linkNavFooter {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.1rem;
+
+.logoPrincipal {
+  width: 230px;
 }
-.listaNavFooter .listaItemFooter .linkNavFooter:hover {
+
+.navbar-toggler:hover {
+  border-color: #e31112;
+}
+
+.navbar-toggler:focus {
+  color: transparent;
+}
+
+.navbar-toggler-icon {
+  color: #e31112;
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+
+.navbar-nav {
+  column-gap: 10px;
+}
+
+.navbar-nav .nav-item {
+  margin: 5px;
+}
+
+.navbar-nav .dropdown-item {
   color: #e31112;
 }
-.listaNavFooter .listaItemFooter .linkNavFooter:active {
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus {
+  color: #f8e4e4;
+  background-color: #e31112;
+}
+.navbar-nav .dropdown-item.active,
+.navbar-nav .dropdown-item:active {
+  color: #e31112;
+  background-color: #553d2a;
+}
+
+.navbar-nav .nav-link {
+  color: #e31112;
+  text-decoration: none;
   font-size: 1.3rem;
+  padding: 12px 0 8px;
 }
-.tituloFooter {
-  font-size: 1.3rem;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
+.navbar-nav .nav-link.colorClaroActive {
+  background-color: #e31112;
+  color: #fff;
+  border: 1px solid #e31112;
+  border-radius: 3px;
+  padding: 12px 10px 8px;
 }
-.txtFooter {
-  font-size: 1.3rem;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #500606;
+  border: 1px solid #500606;
+  border-radius: 3px;
 }
-.txtFooter1 {
-  font-size: 1.1rem;
-  color: #000;
-  font-weight: normal;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
+
+/* Sección Título */
+.seccionTitulo {
+  height: 100vh;
+  background: url("../assets/img/flaviaargiro_fondo.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  padding: 6% 0 0 6%;
+  color: #fff;
 }
-.txtFooter2 {
-  font-size: 1.2rem;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 3px;
+
+.tituloPrincipal,
+.tituloSecundario,
+.logoWebPrincipal,
+.flechaAbajo {
+  position: absolute;
 }
-.tituloFooterSocial {
-  font-size: 1.3rem;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
+
+.tituloPrincipal {
+  font-size: 7rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
+  bottom: 24%;
+  left: 4%;
 }
-.btnColor--facebook {
-  min-width: 50px;
-  background-color: transparent;
-  padding: 7px;
-  border: none;
-  outline: none;
-  font-size: 1.8rem;
-  text-align: center;
-  transform: 0.3s ease;
-  color: #3a5795;
+
+.tituloSecundario {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: -20px;
+  text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
+  bottom: 18%;
+  left: 5.5%;
 }
-.btnColor--facebook:hover {
-  transform: scale(1.2);
+
+.logoWebPrincipal {
+  width: 440px;
+  bottom: 10%;
+  left: 7.5%;
 }
-.btnColor--instagram {
-  min-width: 50px;
-  background-color: transparent;
-  padding: 7px;
-  border: none;
-  outline: none;
-  font-size: 1.8rem;
-  text-align: center;
-  transform: 0.3s ease;
-  color: #dd2a7b;
+
+.flechaAbajo {
+  width: 64px;
+  bottom: 11.5%;
+  right: 14%;
 }
-.btnColor--instagram:hover {
-  transform: scale(1.2);
-}
-.btnColor--whatsapp {
-  min-width: 50px;
-  background-color: transparent;
-  padding: 7px;
-  border: none;
-  outline: none;
-  font-size: 1.8rem;
-  text-align: center;
-  transform: 0.3s ease;
-  color: #25d366;
-}
-.btnColor--whatsapp:hover {
-  transform: scale(1.2);
-}
-@media screen and (max-width: 768px) {
-  .footerPrincipal {
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
+
+@media (max-width: 768px) {
+  .seccionTitulo {
+    background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
+    background-attachment: scroll;
+    padding: 0;
   }
-  .listaNavFooter {
-    padding: initial;
+
+  .tituloPrincipal {
+    font-size: 3.4rem;
+    bottom: 22%;
+    left: 10%;
   }
-  .logoFotter {
-    margin: 10px;
+
+  .tituloSecundario {
+    font-size: 2rem;
+    bottom: 18%;
+    left: 12%;
   }
-  .container {
-    width: 65%;
+
+  .logoWebPrincipal {
+    width: 200px;
+    bottom: 12%;
+    left: 5%;
   }
-  .tituloFooter {
-    text-align: center;
-  }
-  .tituloFooterSocial {
-    text-align: center;
-  }
-  .footerCol .txtFooter {
-    text-align: center;
-  }
-  .footerCol .txtFooter1 {
-    text-align: center;
-  }
-  .footerCol .txtFooter2 {
-    text-align: center;
-  }
-  .listaNavFooter {
-    text-align: center;
+
+  .flechaAbajo {
+    width: 32px;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
-/*Mapa*/
+/* Sección Servicios */
+.seccionServicios,
+.left-side,
+.right-side,
+.seccionMapa {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.seccion {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.seccion.visible {
+  display: block;
+  opacity: 1;
+}
+
+.left-side {
+  position: relative;
+}
+.left-side img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.texto-sobre-imagen {
+  position: absolute;
+  bottom: 4%;
+  left: 9%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 25px 24px 15px;
+  border-radius: 5px;
+}
+
+.right-side {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.right-side iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .right-side {
+    height: auto;
+  }
+
+  .right-side iframe {
+    position: relative;
+    height: 50vh;
+  }
+}
+
+/* Contenedor de las flechas */
+.arrow-container {
+  position: absolute;
+  bottom: 16%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18%;
+}
+
+.arrow {
+  width: 64px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .imgServicios {
+    display: none;
+  }
+
+  .seccionServicios {
+    height: 100vh;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .arrow-container {
+    position: absolute;
+    bottom: -50px; /* Ubica el contenedor en la parte inferior */
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 18%;
+  }
+
+  .arrow {
+    width: 30px;
+  }
+}
+
+/* Sección Mapa */
 .map-embed {
   width: 100%;
   height: 100%;
@@ -491,4 +357,91 @@ body {
   .map-embed {
     height: 250px;
   }
+}
+
+/* Sección Footer */
+.footerPrincipal {
+  background-color: #f8e4e4;
+}
+
+.logoFotter {
+  width: 170px;
+}
+
+.footerCol {
+  margin: 30px 0 20px;
+}
+
+.listaNavFooter {
+  list-style: none;
+  text-align: left;
+}
+
+.listaNavFooter .listaItemFooter {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.listaNavFooter .linkNavFooter {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.listaNavFooter .linkNavFooter:hover {
+  color: #e31112;
+}
+.listaNavFooter .linkNavFooter:active {
+  font-size: 1.3rem;
+}
+
+.tituloFooter,
+.tituloFooterSocial,
+.txtFooter,
+.txtFooter1,
+.txtFooter2 {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.txtFooter1 {
+  font-weight: normal;
+}
+
+.btnColor--facebook,
+.btnColor--instagram,
+.btnColor--whatsapp {
+  min-width: 50px;
+  background-color: transparent;
+  padding: 7px;
+  border: none;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.btnColor--facebook {
+  color: #3a5795;
+}
+
+.btnColor--instagram {
+  color: #dd2a7b;
+}
+
+.btnColor--whatsapp {
+  color: #25d366;
+}
+
+.btnColor--facebook:hover,
+.btnColor--instagram:hover,
+.btnColor--whatsapp:hover {
+  transform: scale(1.3);
+}
+
+.txtFooter3 {
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
 }
