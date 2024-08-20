@@ -2,428 +2,446 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    line-height: 1;
-    color: #e31112;
-    overflow-x: hidden;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  line-height: 1;
+  color: #e31112;
+  overflow-x: hidden;
 }
 
 /* Título de Secciones */
 .tituloSeccion {
-    color: #e31112;
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 50px;
+  color: #e31112;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 50px;
 }
 
 .lineaTitulos {
-    width: 120px;
-    border: 2px solid #553d2a;
-    border-radius: 12px;
-    margin: 10px auto 50px auto;
-    text-align: center;
+  width: 120px;
+  border: 2px solid #553d2a;
+  border-radius: 12px;
+  margin: 10px auto 50px auto;
+  text-align: center;
 }
 
 /* Icono WhatsApp */
 .fa-whatsapp {
-    color: #25D366;
-    font-size: 3rem;
-    position: fixed;
-    bottom: 25px;
-    right: 30px;
-    transition: transform 0.3s ease;
+  color: #25d366;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  transition: transform 0.3s ease;
 }
 .fa-whatsapp:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* Sección Copyright */
 .divCopyright {
-    background-color: #e31112;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    color: #fff;
-    padding-top: 20px;
-    padding-bottom: 3px;
+  background-color: #e31112;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 3px;
 }
 
 .header {
-    background-color: #fff;
-    z-index: 1000;
+  background-color: #fff;
+  z-index: 1000;
 }
 .header .logoPrincipal {
-    width: 230px;
+  width: 230px;
 }
 
 .navbar-toggler:hover {
-    border-color: #e31112;
+  border-color: #e31112;
 }
 .navbar-toggler:focus {
-    color: transparent;
+  color: transparent;
 }
 .navbar-toggler-icon {
-    color: #e31112;
-    font-size: 1.5rem;
-    padding-top: 5px;
+  color: #e31112;
+  font-size: 1.5rem;
+  padding-top: 5px;
 }
 .navbar-nav {
-    column-gap: 10px;
+  column-gap: 10px;
 }
 .navbar-nav .nav-item {
-    margin: 5px;
+  margin: 5px;
 }
 .navbar-nav .nav-item .dropdown-item {
-    color: #e31112;
+  color: #e31112;
 }
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover, .navbar-nav .nav-item .dropdown-menu .dropdown-item:focus {
-    color: #f8e4e4;
-    background-color: #e31112;
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover,
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:focus {
+  color: #f8e4e4;
+  background-color: #e31112;
 }
-.navbar-nav .nav-item .dropdown-menu .dropdown-item.active, .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
-    color: #e31112;
-    background-color: #553d2a;
+.navbar-nav .nav-item .dropdown-menu .dropdown-item.active,
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+  color: #e31112;
+  background-color: #553d2a;
 }
 .navbar-nav .nav-link {
-    color: #e31112;
-    text-decoration: none;
-    font-size: 1.3rem;
-    border: 1px solid #e3111100;
-    padding: 12px 0px 8px 0px;
+  color: #e31112;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 1px solid #e3111100;
+  padding: 12px 0px 8px 0px;
 }
 .navbar-nav .nav-link.colorClaroActive {
-    background-color: #e31112;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.3rem;
-    border: 1px solid #e31112;
-    border-radius: 3px;
-    padding: 12px 10px 8px 10px;
+  background-color: #e31112;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 1px solid #e31112;
+  border-radius: 3px;
+  padding: 12px 10px 8px 10px;
 }
-.navbar-nav .nav-link:hover, .header .navbar-nav .nav-link:focus {
-    color: #500606;
-    border: 1px solid #500606;
-    border-radius: 3px;
+.navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link:focus {
+  color: #500606;
+  border: 1px solid #500606;
+  border-radius: 3px;
 }
 
 .seccionTitulo {
-    height: 100vh;
-    background: url("../assets/img/flaviaargiro_fondo.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    padding-left: 6%;
-    padding-top: 6%;
-    color: #fff;
+  height: 100vh;
+  background: url("../assets/img/flaviaargiro_fondo.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  background-position: center;
+  padding-left: 6%;
+  padding-top: 6%;
+  color: #fff;
 }
 .tituloPrincipal {
-    font-size: 7rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
-    position: absolute;
-    bottom: 24%;
-    left: 4%;
+  font-size: 7rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
+  position: absolute;
+  bottom: 24%;
+  left: 4%;
 }
 .tituloSecundario {
-    font-size: 4rem;
-    font-weight: 400;
-    margin-top: -20px;
-    text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
-    position: absolute;
-    bottom: 18%;
-    left: 5.5%;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: -20px;
+  text-shadow: 2px 2px 10px rgba(54, 54, 54, 0.5);
+  position: absolute;
+  bottom: 18%;
+  left: 5.5%;
 }
 .logoWebPrincipal {
-    width: 440px;
-    position: absolute;
-    bottom: 10%;
-    left: 7.5%;
+  width: 440px;
+  position: absolute;
+  bottom: 10%;
+  left: 7.5%;
 }
 .flechaAbajo {
-    width: 64px;
-    position: absolute;
-    bottom: 11.5%;
-    right: 14%;
+  width: 64px;
+  position: absolute;
+  bottom: 11.5%;
+  right: 14%;
 }
 
 @media screen and (max-width: 768px) {
-    .seccionTitulo {
-        background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
-        background-size: cover;
-        background-position: center center;
-        padding-left: 0%;
-        padding-top: 0%;
-        color: #fff;
-    }
-    .tituloPrincipal {
-        font-size: 3.4rem;
-        bottom: 26%;
-        left: 14%;
-    }
-    .tituloSecundario {
-        font-size: 1.8rem;
-        bottom: 22.3%;
-        left: 17.5%;
-    }
-    .logoWebPrincipal {
-        width: 260px;
-        bottom: 17%;
-        left: 8%;
-     }
-    .flechaAbajo {
-        width: 32px;
-        position: absolute;
-        bottom: 10%;
-        left: 28%;
-    }
-    .linkDescubrir {
-        width: 120px;
-        font-size: 1.2rem;
-        padding: 18px 15px 15px 15px;
-    }
+  .seccionTitulo {
+    background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-left: 0%;
+    padding-top: 0%;
+    color: #fff;
+  }
+  .tituloPrincipal {
+    font-size: 3.4rem;
+    bottom: 26%;
+    left: 14%;
+  }
+  .tituloSecundario {
+    font-size: 1.8rem;
+    bottom: 22.3%;
+    left: 17.5%;
+  }
+  .logoWebPrincipal {
+    width: 260px;
+    bottom: 17%;
+    left: 8%;
+  }
+  .flechaAbajo {
+    width: 32px;
+    position: absolute;
+    bottom: 10%;
+    left: 28%;
+  }
+  .linkDescubrir {
+    width: 120px;
+    font-size: 1.2rem;
+    padding: 18px 15px 15px 15px;
+  }
 }
 
 /*Seccion Servicios*/
 .seccionServicios {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .seccion {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 .seccion.visible {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 .left-side {
-    padding: 0;
-    margin: 0;
-    position: relative;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 .left-side img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 .texto-sobre-imagen {
-    position: absolute;
-    bottom: 4%;
-    left: 9%;
-    color: white; /* Cambia este color si es necesario */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo gris con transparencia */
-    font-size: 3rem; /* Ajusta el tamaño de fuente según sea necesario */
-    font-weight: bold;
-    padding: 25px 24px 15px 24px;
-    border-radius: 5px;
+  position: absolute;
+  bottom: 4%;
+  left: 9%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 25px 24px 15px 24px;
+  border-radius: 5px;
 }
 .right-side {
-    position: relative;
-    padding-bottom: 50px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
-}
-@media screen and (max-width: 768px) {
-
+  position: relative;
+  padding-bottom: 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
 }
 
 /* Contenedor de las flechas */
 .arrow-container {
-    position: absolute;
-    bottom: 16%; /* Ajusta la distancia desde la parte inferior */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 18%;
+  position: absolute;
+  bottom: 16%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 18%;
 }
 
 /* Estilo de las flechas */
 .arrow {
-    width: 64px; /* Ajusta el tamaño de las flechas según sea necesario */
-    height: auto;
+  width: 64px;
+  height: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .imgServicios {
+    display: none;
+  }
+  .seccionServicios {
+    margin-bottom: 80px;
+  }
+  .arrow-container {
+    bottom: -20%;
+    margin-bottom: 40px;
+  }
+  .arrow {
+    width: 30px;
+  }
+}
 
 .titPrincipal {
-    font-size: 3rem;
-    color: #000;
-    margin-top: 80px;
-    margin-left: 30px;
-    margin-bottom: 20px; 
-    position: relative;
+  font-size: 3rem;
+  color: #000;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  position: relative;
 }
 .titPrincipal::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 55%;
-    height: 3px;
-    background-color: #e31112;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 55%;
+  height: 3px;
+  background-color: #e31112;
 }
 .titSecundario {
-    font-size: 1.4rem;
-    color: #303030;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    margin-left: 55px;
+  font-size: 1.4rem;
+  color: #303030;
+  margin-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 55px;
 }
 .titSecundario:hover {
-    color: #e31112;
+  color: #e31112;
 }
 .separacion {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .footerPrincipal {
-    background-color: #f8e4e4;
+  background-color: #f8e4e4;
 }
 .logoFotter {
-    width: 170px;
+  width: 170px;
 }
 .footerCol {
-    margin-top: 30px;
-    margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .listaNavFooter {
-    list-style: none;
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
 .listaNavFooter .listaItemFooter {
-    margin: 0 0 10px 0;
-    text-align: center;
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 .listaNavFooter .listaItemFooter .linkNavFooter {
-    color: #000;
-    text-decoration: none;
-    font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 .listaNavFooter .listaItemFooter .linkNavFooter:hover {
-    color: #e31112;
+  color: #e31112;
 }
 .listaNavFooter .listaItemFooter .linkNavFooter:active {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 .tituloFooter {
-    font-size: 1.3rem;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .txtFooter {
-    font-size: 1.3rem;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .txtFooter1 {
-    font-size: 1.1rem;
-    color: #000;
-    font-weight: normal;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .txtFooter2 {
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 3px;
 }
 .tituloFooterSocial {
-    font-size: 1.3rem;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .btnColor--facebook {
-    min-width: 50px;
-    background-color: transparent;
-    padding: 7px;
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    text-align: center;
-    transform: 0.3s ease;
-    color: #3a5795;
+  min-width: 50px;
+  background-color: transparent;
+  padding: 7px;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  text-align: center;
+  transform: 0.3s ease;
+  color: #3a5795;
 }
 .btnColor--facebook:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 .btnColor--instagram {
-    min-width: 50px;
-    background-color: transparent;
-    padding: 7px;
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    text-align: center;
-    transform: 0.3s ease;
-    color: #dd2a7b;
+  min-width: 50px;
+  background-color: transparent;
+  padding: 7px;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  text-align: center;
+  transform: 0.3s ease;
+  color: #dd2a7b;
 }
 .btnColor--instagram:hover {
-    transform: scale(1.2); 
+  transform: scale(1.2);
 }
 .btnColor--whatsapp {
-    min-width: 50px;
-    background-color: transparent;
-    padding: 7px;
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    text-align: center;
-    transform: 0.3s ease;
-    color: #25D366;
+  min-width: 50px;
+  background-color: transparent;
+  padding: 7px;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  text-align: center;
+  transform: 0.3s ease;
+  color: #25d366;
 }
 .btnColor--whatsapp:hover {
-    transform: scale(1.2); 
+  transform: scale(1.2);
 }
 @media screen and (max-width: 768px) {
-    .footerPrincipal {
-        width: 100%;
-        margin: 0 auto;
-        align-items: center;
-        text-align: center;
-    }
-    .listaNavFooter {
-        padding: initial;
-    }
-    .logoFotter {
-        margin: 10px;
-    }
-    .container {
-        width: 65%;
-    }
-    .tituloFooter {
-        text-align: center;
-    }
-    .tituloFooterSocial {
-        text-align: center;
-    }
-    .footerCol .txtFooter {
-        text-align: center;
-    }
-    .footerCol .txtFooter1 {
-        text-align: center;
-    }
-    .footerCol .txtFooter2 {
-        text-align: center;
-    }
-    .listaNavFooter {
-        text-align: center;
-    }
+  .footerPrincipal {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .listaNavFooter {
+    padding: initial;
+  }
+  .logoFotter {
+    margin: 10px;
+  }
+  .container {
+    width: 65%;
+  }
+  .tituloFooter {
+    text-align: center;
+  }
+  .tituloFooterSocial {
+    text-align: center;
+  }
+  .footerCol .txtFooter {
+    text-align: center;
+  }
+  .footerCol .txtFooter1 {
+    text-align: center;
+  }
+  .footerCol .txtFooter2 {
+    text-align: center;
+  }
+  .listaNavFooter {
+    text-align: center;
+  }
 }
