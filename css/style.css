@@ -154,7 +154,7 @@ main {
 .seccionTitulo {
   height: 100vh;
   background: url("../assets/img/flaviaargiro_fondo.jpg") no-repeat center
-    center fixed;
+    center;
   background-size: cover;
   padding: 6% 0 0 6%;
   color: #fff;
@@ -200,6 +200,7 @@ main {
   .seccionTitulo {
     background-image: url("../assets/img/flaviaargiro_fondo_peq.jpg");
     background-attachment: scroll;
+    background-size: cover;
     padding: 0;
   }
 
@@ -226,6 +227,34 @@ main {
     bottom: 6%;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+/* Media query específica para iPads y pantallas más grandes */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .seccionTitulo {
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+  }
+
+  .tituloPrincipal {
+    font-size: 6rem;
+    bottom: 20%;
+  }
+
+  .tituloSecundario {
+    font-size: 3rem;
+    bottom: 15%;
+  }
+
+  .logoWebPrincipal {
+    width: 380px;
+    bottom: 8%;
+  }
+
+  .flechaAbajo {
+    width: 56px;
+    bottom: 10%;
   }
 }
 
